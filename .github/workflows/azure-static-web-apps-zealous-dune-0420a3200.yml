@@ -32,9 +32,6 @@ jobs:
           output_location: "out" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
-          is_static_export: true
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
