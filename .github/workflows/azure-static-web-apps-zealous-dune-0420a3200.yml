@@ -33,6 +33,8 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_DUNE_0420A3200 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           is_static_export: true
 
   close_pull_request_job:
